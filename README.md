@@ -21,7 +21,7 @@ git clone https://github.com/joseph-scott-campbell/cleofetch.git
 cd cleofetch.git # entering cleofetch directory
 
 # editing config file, replace with OS of choice if supported
-sed -i '1s/^/#define ARCH_LINUX\n' include/config.h
+sed -i '1i #define ARCH_LINUX\n' include/config.h
 
 make # compile
 
